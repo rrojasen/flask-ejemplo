@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<main class="container mb-5">
+    <h1>Controles</h1>
+    <p>Esta pantalla es para solicitar el analisis de permanencia laboral en semanas.</p>
+    <form>
+        <fieldset>
+            <legend>Analisis de permanencia: </legend>
+            <div>
+                <button type="button" class="btn-solid theme-secondary">Taer postulantes</button>
+                <button type="button" class="btn-solid theme-primary">Analizar</button>
+            </div>
+        </fieldset>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>DNI</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th class="bg-success">Tiempo de permanencia (semanas)</th>
+                </tr>
+            </thead>
+            <body>
+                <tr>
+                    <td>12345678</td>
+                    <td>Juan</td>
+                    <td>Perez</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>87654321</td>
+                    <td>Maria</td>
+                    <td>Gomez</td>
+                    <td>8</td>
+                </tr>
+            </body>
+        </table>
+    </form>
+</main>
+{% endblock %}
